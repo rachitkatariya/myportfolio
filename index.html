@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <title>rachitkatariya.me</title>
+</head>
+<body class="bg-slate-300 min-w-fit min-h-full">
+    <!-- Navbar -->
+    <nav class=" nav-bar p-3 flex bg-slate-300 items-center justify-around">
+        <div>
+            <a href="#" id="brand" class="flex gap-2 items-center flex-1">
+                <span class="text-lg font-semibold font-display">rachit</span>
+            </a>
+        </div>
+            <div id="nav-menu" class="hidden lg:flex gap-12">
+                <a href="#" class="font-semibold hover:text-primary">Home</a>
+                <a href="#" class="font-semibold hover:text-primary">Skils</a>
+                <a href="#" class="font-semibold hover:text-primary">Education</a>
+                <a href="#" class="font-semibold hover:text-primary">Project</a>
+                <a href="#" class="font-semibold hover:text-primary">Contact</a>
+            </div>
+            <button class="p-2 lg:hidden" onclick="handleMenu()">
+                <i class="fa-solid fa-bars text-gray-600"></i>
+            </button>
+
+        <div id="nav-dialog" class=" hidden fixed z-10 md:hidden bg-white inset-0 p-3">
+            <div id="nav-bar" class="flex justify-between">
+                <a href="#" id="brand" class="flex gap-2 items-center ">
+                    <span class="text-lg font-medium font-display">katariya</span>
+                </a>
+                <button class="p-2 md:hidden" onclick="handleMenu()">
+                    <i class="fa-solid fa-xmark text-gray-600"></i>
+                </button>
+            </div>
+            <div class="mt-6">
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-100 block rounded-lg">Home</a>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-100 block rounded-lg">Skills</a>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-100 block rounded-lg">Education</a>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-100 block rounded-lg">Project</a>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-100 block rounded-lg">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="flex my-6 mx-auto mt-20 sm:mt-14 sm:12 gap-2 items-center border border-yellow-300 rounded-md bg-yellow-50 px-3 py-1 w-fit shadow-md hover:shadow-lg hover:-translate-y-0.5 transition group cursor-pointer sm:px-10 sm:mx-auto">
+        <div class=" w-2 h-2 bg-yellow-400 rounded-full border border-yellow-600"></div>
+        <p class="font-display font-medium text-yellow-500">hey! folks <span class="text-yellow-800 ml-1">I'm web developer & designer</span></p>
+        <i class="fa-solid fa-arrow-right text-yellow-600 group-hover:translate-x-1 transition duration-300"></i>
+    </div>
+
+    <!-- Main Section -->
+
+    <div class="bg-slate-300 max-w-fit mx-auto my-auto mt-16 mb-16 px-6 pt-6 pb-6 flex flex-col lg:flex-row items-center justify-center border border-gray-950 rounded-xl">
+
+        <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-1 lg:gap-4">
+            <!-- Profile Image -->
+            <div class="flex justify-center px-8 py-4 mb-4 lg:mb-0">
+                <img src="assets/profile.jpg" class="w-28 h-28 rounded-lg hover:rounded-full cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105">
+            </div>
+        
+            <div class="flex flex-col sm:flex-row gap-4 justify-center sm:content-center items-center ml-16">
+                <!-- First Group of Social Icons -->
+                <div class="flex flex-row items-center sm:items-start gap-8">
+                    <a href="https://www.github.com/rachitkatariya" class="flex items-center gap-1 group">
+                        <img src="assets/github.png" class="w-11 h-11 transition-transform duration-300 ease-in-out transform group-hover:translate-x-[-5px]">
+                        <span class="opacity-0 transform translate-x-2 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:translate-x-0">Github</span>
+                    </a>
+                    <a href="https://www.leetcode.com/rachitkatariya" class="flex items-center gap-1 group">
+                        <img src="assets/leetcode.png" class="w-11 h-11 transition-transform duration-300 ease-in-out transform group-hover:translate-x-[-5px]">
+                        <span class="opacity-0 transform translate-x-2 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:translate-x-0">Leetcode</span>
+                    </a>
+                </div>
+        
+                <!-- Second Group of Social Icons -->
+                <div class="flex flex-row items-center sm:items-start gap-6">
+                    <a href="https://www.linkedin.com/in/rachitkatariya" class="flex items-center gap-0 group mr-4">
+                        <img src="assets/linkedin.png" class="w-9 h-9 transition-transform duration-300 ease-in-out transform group-hover:translate-x-[-5px]">
+                        <span class="opacity-0 transform translate-x-2 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:translate-x-0">LinkedIn</span>
+                    </a>
+                    <a href="https://www.twitter.com/rachitkatariyaa" class="flex items-center group gap-2 mr-2">
+                        <img src="assets/twitter.png" class="w-10 h-10 transition-transform duration-300 ease-in-out transform group-hover:translate-x-[-5px]">
+                        <span class="opacity-0 transform translate-x-2 transition-all duration-300 ease-in-out group-hover:opacity-100 group-hover:translate-x-0 ">Twitter</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
