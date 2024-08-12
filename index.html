@@ -8,9 +8,9 @@
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <title>rachitkatariya.me</title>
 </head>
-<body class="bg-slate-300 min-w-fit min-h-full">
+<body class=" min-w-fit min-h-full">
     <!-- Navbar -->
-    <nav class=" nav-bar p-3 flex bg-slate-300 items-center justify-around">
+    <nav class=" nav-bar p-3 flex items-center justify-between lg:justify-around">
         <div>
             <a href="#" id="brand" class="flex gap-2 items-center flex-1">
                 <span class="text-lg font-semibold font-display">rachit</span>
@@ -24,7 +24,7 @@
                 <a href="#" class="font-semibold hover:text-primary">Contact</a>
             </div>
             <button class="p-2 lg:hidden" onclick="handleMenu()">
-                <i class="fa-solid fa-bars text-gray-600"></i>
+                <i class="fa-solid fa-bars "></i>
             </button>
 
         <div id="nav-dialog" class=" hidden fixed z-10 md:hidden bg-white inset-0 p-3">
@@ -33,7 +33,7 @@
                     <span class="text-lg font-medium font-display">katariya</span>
                 </a>
                 <button class="p-2 md:hidden" onclick="handleMenu()">
-                    <i class="fa-solid fa-xmark text-gray-600"></i>
+                    <i class="fa-solid fa-xmark "></i>
                 </button>
             </div>
             <div class="mt-6">
@@ -54,7 +54,7 @@
 
     <!-- Main Section -->
 
-    <div class="bg-slate-300 max-w-fit mx-auto my-auto mt-16 mb-16 px-6 pt-6 pb-6 flex flex-col lg:flex-row items-center justify-center border border-gray-950 rounded-xl">
+    <div class="max-w-fit mx-auto my-auto mt-16 mb-16 px-6 pt-6 pb-6 flex flex-col lg:flex-row items-center justify-center border border-gray-950 rounded-xl">
 
         <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-1 lg:gap-4">
             <!-- Profile Image -->
@@ -92,8 +92,10 @@
     </div>
 
 
-    
+    <div class=" flex justify-center text-lg font-semibold">
+        Project Section (Working on it)
+    </div>
 
-    <script src="script.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
