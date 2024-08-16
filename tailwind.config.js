@@ -18,6 +18,9 @@ module.exports = {
         deepBlueHead: "#162f56",
         gray2: "#525a76",
       },
+      screens: {
+        'xs': '350px', // Custom screen size for 350px width
+      },
     },
   },
   plugins: [],
