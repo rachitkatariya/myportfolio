@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" href="assets/favicon.png">
     <title>rachitkatariya.me</title>
 </head>
-<body class=" min-w-fit min-h-full">
+<body class=" min-w-fit min-h-full bg-lime-200 ">
     <!-- Navbar -->
     <nav class=" nav-bar p-3 flex items-center justify-between lg:justify-around">
         <div>
@@ -18,44 +18,44 @@
             </a>
         </div>
             <div id="nav-menu" class="hidden lg:flex gap-12">
-                <a href="#" class="font-semibold hover:text-primary">Home</a>
-                <a href="#" class="font-semibold hover:text-primary">Skils</a>
-                <a href="#" class="font-semibold hover:text-primary">Education</a>
-                <a href="#" class="font-semibold hover:text-primary">Project</a>
-                <a href="#" class="font-semibold hover:text-primary">Contact</a>
+                <a href="#" class="font-semibold hover:text-primary hover:text-orange-800">Home</a>
+                <a href="#" class="font-semibold hover:text-primary hover:text-orange-800">Skils</a>
+                <a href="#" class="font-semibold hover:text-primary hover:text-orange-800">Education</a>
+                <a href="#" class="font-semibold hover:text-primary hover:text-orange-800">Project</a>
+                <a href="#" class="font-semibold hover:text-primary hover:text-orange-800">Contact</a>
             </div>
             <button class="p-2 lg:hidden" onclick="handleMenu()">
                 <i class="fa-solid fa-bars "></i>
             </button>
 
-        <div id="nav-dialog" class=" hidden fixed z-10 md:hidden bg-white inset-0 p-3">
+        <div id="nav-dialog" class=" hidden fixed z-10 md:hidden bg-lime-200 inset-0 p-3">
             <div id="nav-bar" class="flex justify-between">
-                <a href="#" id="brand" class="flex gap-2 items-center ">
-                    <span class="text-lg font-medium font-display">katariya</span>
+                <a href="#" id="brand" class="flex gap-2 items-center bg-lime-200">
+                    <span class="text-lg font-medium font-display bg-lime-200">katariya</span>
                 </a>
                 <button class="p-2 md:hidden" onclick="handleMenu()">
                     <i class="fa-solid fa-xmark "></i>
                 </button>
             </div>
-            <div class="mt-6">
-                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-100 block rounded-lg">Home</a>
-                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-100 block rounded-lg">Skills</a>
-                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-100 block rounded-lg">Education</a>
-                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-100 block rounded-lg">Project</a>
-                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-100 block rounded-lg">Contact</a>
+            <div class="mt-6 bg-lime-200">
+                <a href="#" class="font-medium m-3 p-3 hover:text-blue-800 block rounded-lg">Home</a>
+                <a href="#" class="font-medium m-3 p-3 hover:text-blue-800 block rounded-lg">Skills</a>
+                <a href="#" class="font-medium m-3 p-3 hover:text-blue-800 block rounded-lg">Education</a>
+                <a href="#" class="font-medium m-3 p-3 hover:text-blue-800 block rounded-lg">Project</a>
+                <a href="#" class="font-medium m-3 p-3 hover:text-blue-800 block rounded-lg">Contact</a>
             </div>
         </div>
     </nav>
 
-    <div class="flex my-6 mx-auto mt-20 sm:mt-14 sm:12 gap-2 items-center border border-yellow-300 rounded-md bg-yellow-50 px-3 py-1 w-fit shadow-md hover:shadow-lg hover:-translate-y-0.5 transition group cursor-pointer sm:px-10 sm:mx-auto">
+    <div class="flex my-6 mx-auto mt-16 sm:mt-10 sm:12 gap-2 items-center border border-yellow-300 rounded-md bg-yellow-50 px-1 py-1 w-fit shadow-md hover:shadow-lg hover:-translate-y-0.5 transition group cursor-pointer sm:px-10 ">
         <div class=" w-2 h-2 bg-yellow-400 rounded-full border border-yellow-600"></div>
-        <p class="font-display font-medium text-yellow-500">hey! folks <span class="text-yellow-800 ml-1">I'm web developer & designer</span></p>
+        <p class="font-display font-medium sm:text-sm text-yellow-500">hey! folks <span class="text-yellow-800 ml-1 sm:text-sm">I'm web developer & designer</span></p>
         <i class="fa-solid fa-arrow-right text-yellow-600 group-hover:translate-x-1 transition duration-300"></i>
     </div>
 
     <!-- Main Section -->
 
-    <div class="max-w-fit mx-auto my-auto mt-16 mb-16 px-6 pt-6 pb-6 flex flex-col lg:flex-row items-center justify-center border border-gray-950 rounded-xl">
+    <div class="max-w-fit mt-16 mx-auto my-auto py-16 mb-10 px-2 pt-6 pb-6 flex flex-col lg:flex-row items-center justify-center border border-gray-950 rounded-xl relative ">
 
         <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-1 lg:gap-4">
             <!-- Profile Image -->
@@ -91,9 +91,306 @@
             </div>
         </div>
     </div>
-    <div class=" flex justify-center text-lg font-semibold">
-        Project Section (Working on it)
+
+    <!-- Skills -->
+
+    <div id="skills-container" class="flex flex-col gap-8 mt-10">
+        <div id="companies-title" class="flex justify-center gap-2">
+            <img class="translate-y-2" src="assets/arrow.svg" alt="">
+            <span class="font-semibold">Skills</span>
+            <img class="-scale-x-100 translate-y-2" src="assets/arrow.svg" alt="">
+        </div>
+
+        <div id="lines-group" class="flex flex-col gap-4 mt-2">
+            <div id="line1" class="flex gap-4 w-screen -translate-x-48 transition-transform ease-linear">
+                <div class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                    <img src="assets/html.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                    <span class="text-[12px] font-semibold lg:text-[16px]">HTML</span>
+                </div>
+                
+                <div class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                    <img src="assets/html5.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                    <span class="text-[12px] font-semibold lg:text-[16px]">HTML</span>
+                </div>
+                <div class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                    <img src="assets/css.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                    <span class="text-[12px] font-semibold lg:text-[16px]">CSS</span>
+                </div>
+                <div class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                    <img src="assets/tailwind.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                    <span class="text-[12px] font-semibold lg:text-[16px]">Tailwind CSS</span>
+                </div>
+                
+                <div class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                    <img src="assets/javascript.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                    <span class="text-[12px] font-semibold lg:text-[16px]">Javascript</span>
+                </div>
+                <div class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                    <img src="assets/nodejs.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                    <span class="text-[12px] font-semibold lg:text-[16px]">NodeJs</span>
+                </div>
+                <div class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                    <img src="assets/express.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                    <span class="text-[12px] font-semibold lg:text-[16px]">ExpressJs</span>
+                </div>
+                <div class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                    <img src="assets/react.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                    <span class="text-[12px] font-semibold lg:text-[16px]">ReactJS</span>
+                </div>
+                <div class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                    <img src="assets/javascript.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                    <span class="text-[12px] font-semibold lg:text-[16px]">Javascript</span>
+                </div>
+                <div class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                    <img src="assets/nodejs.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                    <span class="text-[12px] font-semibold lg:text-[16px]">NodeJs</span>
+                </div>
+                <div class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                    <img src="assets/tailwindcss.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                    <span class="text-[12px] font-semibold lg:text-[16px]">Tailwind CSS</span>
+                </div>
+                <div class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                    <img src="assets/express.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                    <span class="text-[12px] font-semibold lg:text-[16px]">ExpressJs</span>
+                </div>
+                <div class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                    <img src="assets/react.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                    <span class="text-[12px] font-semibold lg:text-[16px]">ReactJS</span>
+                </div>
+                
+            </div>
+            <div id="line2" class="flex gap-4 w-screen -translate-x-36 transition-transform ease-linear">
+                <div class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                    <img src="assets/reactjs.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                    <span class="text-[12px] font-semibold lg:text-[16px]">ReactJS</span>
+                </div>
+                <div class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                    <img src="assets/nodejs.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                    <span class="text-[12px] font-semibold lg:text-[16px]">NodeJs</span>
+                </div>
+                <div class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                    <img src="assets/mongo.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                    <span class="text-[12px] font-semibold lg:text-[16px]">MongoDB</span>
+                </div>
+                <div class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                    <img src="assets/mysql.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                    <span class="text-[12px] font-semibold lg:text-[16px]">MySql</span>
+                </div>
+                <div class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                    <img src="assets/postman.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                    <span class="text-[12px] font-semibold lg:text-[16px]">PostmanApi</span>
+                </div>
+                <div class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                    <img src="assets/cpp.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                    <span class="text-[12px] font-semibold lg:text-[16px]">C++</span>
+                </div>
+                <div class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                    <img src="assets/python.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                    <span class="text-[12px] font-semibold lg:text-[16px]">Python</span>
+                </div>
+                <div class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                    <img src="assets/java.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                    <span class="text-[12px] font-semibold lg:text-[16px]">Java</span>
+                </div>
+                
+                <div class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                    <img src="assets/express.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                    <span class="text-[12px] font-semibold lg:text-[16px]">ExpressJs</span>
+                </div>
+                <div class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                    <img src="assets/react.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                    <span class="text-[12px] font-semibold lg:text-[16px]">ReactJs</span>
+                </div>
+
+                <div class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                    <img src="assets/postman.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                    <span class="text-[12px] font-semibold lg:text-[16px]">PostmanApi</span>
+                </div>
+                <div class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                    <img src="assets/cpp.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                    <span class="text-[12px] font-semibold lg:text-[16px]">C++</span>
+                </div>
+                
+            </div>
+            <div id="line3" class="flex md:hidden gap-4 w-screen -translate-x-48 transition-transform ease-linear">
+                <div class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                    <img src="assets/html.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                    <span class="text-[12px] font-semibold lg:text-[16px]">HTML</span>
+                </div>
+                
+                <div class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                    <img src="assets/html5.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                    <span class="text-[12px] font-semibold lg:text-[16px]">HTML</span>
+                </div>
+                <div class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                    <img src="assets/css.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                    <span class="text-[12px] font-semibold lg:text-[16px]">CSS</span>
+                </div>
+                <div class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                    <img src="assets/tailwind.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                    <span class="text-[12px] font-semibold lg:text-[16px]">Tailwind CSS</span>
+                </div>
+
+                <div class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                    <img src="assets/nodejs.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                    <span class="text-[12px] font-semibold lg:text-[16px]">NodeJs</span>
+                </div>
+                <div class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                    <img src="assets/mongo.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                    <span class="text-[12px] font-semibold lg:text-[16px]">MongoDB</span>
+                </div>
+                <div class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                    <img src="assets/mysql.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                    <span class="text-[12px] font-semibold lg:text-[16px]">MySql</span>
+                </div>
+                <div class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                    <img src="assets/postman.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                    <span class="text-[12px] font-semibold lg:text-[16px]">PostmanApi</span>
+                </div>
+                <div class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24 rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                    <img src="assets/tailwind.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                    <span class="text-[12px] font-semibold lg:text-[16px]">Tailwind CSS</span>
+                </div>
+                <div class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                    <img src="assets/tailwindcss.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                    <span class="text-[12px] font-semibold lg:text-[16px]">Tailwind CSS</span>
+                </div>
+                <div class="flex flex-col justify-center gap-2 items-center min-w-24 min-h-24rounded-xl border border-gray-300 md:min-h-32 md:min-w-32">
+                    <img src="assets/javascript.png" class="w-12 h-12 md:w-16 md:h-16" alt="">
+                    <span class="text-[12px] font-semibold lg:text-[16px]">Javascript</span>
+                </div>
+            </div>
+        </div>
+
     </div>
+
+    <!-- Bento Grid of Projects -->
+
+    <div id="bento-grid" class="px-6 py-12 max-w-7xl mt-4 mx-auto lg:px-8 lg:mt-2 cursor-pointer">  
+        <h2 class="text-5xl sm:font-semibold mb-14 text-gray-900">Projects</h2>
+        <div id="grid-container" class="grid gap-6 lg:grid-cols-3 lg:gap-8 auto-rows-min">
+
+            <!-- Prakriti Yog Project -->
+            <div class="row-span-2 group rounded-2xl p-[1px] bg-lime-200 hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200">
+                <div class="bg-lime-100 rounded-2xl w-full h-full p-6 flex flex-col gap-6 items-center group-hover:bg-gradient-to-br group-hover:from-yellow-200 hover:via-purple-200 hover:to-yellow-200">
+                    <h3 class="text-2xl text-gray-800">Prakrati Yog</h3>
+                    <p class="text-lg text-center text-gray-800">Yoga offers diverse practices for physical strength and flexibility while enhancing mental clarity and stress relief. Its holistic approach promotes overall well-being and a balanced lifestyle.</p>
+                    <img src="assets/pragati-yog.jpg" class="rounded-lg">
+                    <div class="flex justify-between space-x-4 gap-10">
+                        <a href="https://example.com" class="inline-block px-3 py-2 text-white bg-emerald-600 rounded-lg hover:bg-gray-700 transition-transform duration-300 ease-in-out transform hover:scale-105">
+                            Git Repository
+                        </a>
+                        <a href="https://example.com" class="inline-block px-3 py-2 text-white bg-emerald-600 rounded-lg hover:bg-gray-700 transition-transform duration-300 ease-in-out transform hover:scale-105">
+                            Live Demo
+                        </a>
+                    </div>                    
+                </div> 
+            </div>
+
+            <!-- Weather Project -->
+            <div class="row-span-3 group rounded-2xl p-[1px] bg-slate-100 hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200">
+                <div class="bg-lime-100 rounded-2xl w-full h-full p-6 flex flex-col gap-6 items-center group-hover:bg-gradient-to-br group-hover:from-yellow-200 hover:via-purple-200 hover:to-yellow-200">
+                    <h3 class="text-2xl text-gray-800">Mausam Vibhaag</h3>
+                    <p class="text-lg text-center text-gray-800">This project demonstrates the live weather, fetching real-time weather data using a weather API. The application displays current weather conditions, forecasts, and historical weather data for any given location.</p>
+                    <img src="assets/mausam (2).jpg" class="rounded-lg">
+                    <div class="flex justify-between space-x-4 gap-10">
+                        <a href="https://github.com/rachitkatariya/weather-app" class="inline-block px-3 py-2 text-white bg-emerald-600 rounded-lg hover:bg-gray-700 transition-transform duration-300 ease-in-out transform hover:scale-105">
+                            Git Repository
+                        </a>
+                        <a href="https://mausam-vibhaag.netlify.app" class="inline-block px-3 py-2 text-white bg-emerald-600 rounded-lg hover:bg-gray-700 transition-transform duration-300 ease-in-out transform hover:scale-105">
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tic-Tac-Toe -->
+            <div class="row-span-2 group rounded-2xl p-[1px] bg-slate-100 hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200">
+                <div class="bg-lime-100 rounded-2xl w-full h-full p-6 flex flex-col gap-6 items-center group-hover:bg-gradient-to-br group-hover:from-yellow-200 hover:via-purple-200 hover:to-yellow-200">
+                    <h3 class="text-2xl">zeros-cross Game</h3>
+                    <p class="text-lg text-center text-gray-800">Tic-tac-toe is a two-player game where each player alternately marks one of nine grid squares with an X or O. The first player to align three of their symbols in a row, column, or diagonal wins.</p>
+                    <img src="assets/zeros-cross.jpg" class="rounded-lg" >
+                    <div class="flex justify-between space-x-4 gap-10">
+                        <a href="https://github.com/rachitkatariya/Tic-Tac-Toe" class="inline-block px-3 py-2 text-white bg-emerald-600 rounded-lg hover:bg-gray-700 transition-transform duration-300 ease-in-out transform hover:scale-105">
+                            Git Repository
+                        </a>
+                        <a href="https://zeros-cross.netlify.app" class="inline-block px-3 py-2 text-white bg-emerald-600 rounded-lg hover:bg-gray-700 transition-transform duration-300 ease-in-out transform hover:scale-105">
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Safarnaama Project -->
+            <div class="row-span-3 group rounded-2xl p-[1px] bg-slate-100 hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200">
+                <div class="bg-lime-100 rounded-2xl w-full h-full p-6 flex flex-col gap-6 items-center group-hover:bg-gradient-to-br group-hover:from-yellow-200 hover:via-purple-200 hover:to-yellow-200">
+                    <h3 class="text-2xl">Safarnaama</h3>
+                    <p class="text-lg text-center font-light">Discover your next adventure with our travel website. Explore destinations, book accommodations, and find travel tips to make your journey unforgettable.</p>
+                    <img src="assets/safarnaama.jpg" class="rounded-lg">
+                    <div class="flex justify-between space-x-4 gap-10">
+                        <a href="https://github.com/rachitkatariya/SafarNaama" class="inline-block px-3 py-2 text-white bg-emerald-600 rounded-lg hover:bg-gray-700 transition-transform duration-300 ease-in-out transform hover:scale-105">
+                            Git Repository
+                        </a>
+                        <a href="https://safarnaama.netlify.app" class="inline-block px-3 py-2 text-white bg-emerald-600 rounded-lg hover:bg-gray-700 transition-transform duration-300 ease-in-out transform hover:scale-105">
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- JS Projects -->
+            <div class="row-span-2 group rounded-2xl p-[1px] bg-slate-100 hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200">
+                <div class="bg-lime-100 rounded-2xl w-full h-full p-6 flex flex-col gap-6 items-center group-hover:bg-gradient-to-br group-hover:from-yellow-200 hover:via-purple-200 hover:to-yellow-200">
+                    <h3 class="text-2xl">JS Projects</h3>
+                    <p class="text-lg text-center font-light">30 Days of JavaScript learning challenge and this repository include all the code I've learned during this challenge.</p>
+                    <img src="assets/JavaScript-Projects.png" class="rounded-lg">
+                    <div class="flex justify-between space-x-4 gap-10">
+                        <a href="https://github.com/rachitkatariya/js-projects" class="inline-block px-3 py-2 text-white bg-emerald-600 rounded-lg hover:bg-gray-700 transition-transform duration-300 ease-in-out transform hover:scale-105">
+                            Git Repository
+                        </a>
+                        <a href="https://github.com/rachitkatariya/js-projects" class="inline-block px-3 py-2 text-white bg-emerald-600 rounded-lg hover:bg-gray-700 transition-transform duration-300 ease-in-out transform hover:scale-105">
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WEB DEV Learning Clone Projects -->
+            <div class="row-span-3 group rounded-2xl p-[1px] bg-slate-100 hover:bg-gradient-to-br hover:from-red-200 hover:via-purple-200 hover:to-yellow-200">
+                <div class="bg-lime-100 rounded-2xl w-full h-full p-6 flex flex-col gap-6 items-center group-hover:bg-gradient-to-br group-hover:from-yellow-200 hover:via-purple-200 hover:to-yellow-200">
+                    <h3 class="text-2xl">Web Dev Learning Clone Projects</h3>
+                    <p class="text-lg text-center font-light">In this is repo include my all webDevelopment learning base clone projects like Amazon, Netflix, Myntra, Netflix, Spotify, Zerodha and etc.</p>
+                    <img src="assets/web-dev-project.jpg" class="rounded-lg">
+                    <div class="flex justify-between space-x-4 gap-10">
+                        <a href="https://github.com/rachitkatariya/webDev" class="inline-block px-3 py-2 text-white bg-emerald-600 rounded-lg hover:bg-gray-700 transition-transform duration-300 ease-in-out transform hover:scale-105">
+                            Git Repository
+                        </a>
+                        <a href="https://github.com/rachitkatariya/webDev" class="inline-block px-3 py-2 text-white bg-emerald-600 rounded-lg hover:bg-gray-700 transition-transform duration-300 ease-in-out transform hover:scale-105">
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>  
+
+
+    <div class="mt-10 text-lg flex justify-center">
+
+        Working on Full Stack Projects...⌛
+    </div>
+
+    <br>
+
+
+
+
+
+
+</br>
+
+    
 
     <script src="script.js"></script>
 </body>
