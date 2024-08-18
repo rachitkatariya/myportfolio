@@ -1,7 +1,7 @@
 # Portfolio Website 
 
 ### 📝 Description
-This is my personal portfolio website created using HTML, CSS, JavaScript and Tailwind CSS. It is fully responsive, ensuring a seamless experience on both desktop and mobile devices. It's a showcase of my skills, and projects, and you can explore it [here](rachitkatariya.netlify.app).
+This is my personal portfolio website created using HTML, CSS, JavaScript and Tailwind CSS. It is fully responsive, ensuring a seamless experience on both desktop and mobile devices. It's a showcase of my skills, and projects, and you can explore it [here](https://rachitkatariya.github.io/personal-portfolio/).
 
 ### 👀 Website Preview
 You can check out the website hosted using GitHub Pages at- https://rachitkatariya.netlify.app/
