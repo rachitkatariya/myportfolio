@@ -3,7 +3,8 @@
 ### 📝 Description
 This is my personal portfolio website created using HTML, CSS, JavaScript and Tailwind CSS. It is fully responsive, ensuring a seamless experience on both desktop and mobile devices. It's a showcase of my skills, and projects, and you can explore it [here](rachitkatariya.netlify.app).
 
-
+### 👀 Website Preview
+You can check out the website hosted using GitHub Pages at- rachitkatariya.netlify.app
 ### 🛠️ Languages and Tools Used
 
 <p align="center">
