@@ -1,27 +1,29 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["*"],
+  content: [
+    "./**/*.html", // Adjust the paths to include all HTML files
+    "./tailwind.config.js"
+  ],
   theme: {
     extend: {
       fontFamily: {
         mullish: ["Mulish", "sans-serif"],
       },
       colors: {
-        deepBlue: "#02042a",
-        lightBlue: "#2b84ea",
-        lightBlue300: "#4b94ed",
-        lightBlue500: "#0b72e7",
-        greenLight: "#61cea6",
-        grayText: "#818597",
-        lightGray: "#e2e2e2",
-        grayBlue: "#344a6c",
-        deepBlueHead: "#162f56",
-        gray2: "#525a76",
-      },
-      screens: {
-        'xs': '350px', // Custom screen size for 350px width
+        'dark-black': '#212121',
       },
     },
+    screens: {
+      'sm': '400px',
+      // => @media (min-width: 400px) { ... }
+
+      'md': '960px',
+      // => @media (min-width: 960px) { ... }
+
+      'lg': '1440px',
+      // => @media (min-width: 1440px) { ... }
+    },
+    darkMode: 'class', // Enable dark mode with class strategy
   },
-  plugins: [],
+  plugins: [], // Add your plugins here if needed
 };
