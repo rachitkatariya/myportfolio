@@ -1,27 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const checkbox = document.querySelector("#checkbox");
-    const root = document.documentElement; // For applying classes to the whole document
+    const root = document.documentElement; 
 
-    // Check local storage for the user's theme preference
-    if (localStorage.getItem("theme") === "dark") {
-        root.classList.add("dark");
-        checkbox.checked = true;
-    } else {
-        root.classList.remove("dark");
-        checkbox.checked = false;
-    }
-
-    checkbox.addEventListener("change", () => {
-        if (checkbox.checked) {
-            // Switch to dark mode
-            root.classList.add("dark");
-            localStorage.setItem("theme", "dark");
-        } else {
-            // Switch to light mode
-            root.classList.remove("dark");
-            localStorage.setItem("theme", "light");
-        }
-    });
 });
 
 // Navbar menu toggle functionality
@@ -72,12 +52,10 @@ function setupIntersectionObserver(element, isLTR, speed) {
 const line1 = document.getElementById('line1');
 const line2 = document.getElementById('line2');
 const line3 = document.getElementById('line3');
-const line4 = document.getElementById('line4');
 
 setupIntersectionObserver(line1, true, 0.25);
 setupIntersectionObserver(line2, false, 0.25);
 setupIntersectionObserver(line3, true, 0.25);
-setupIntersectionObserver(line4, true, 0.8);
 
 // Accordion functionality
 const dtElements = document.querySelectorAll('dt');
